@@ -1,0 +1,164 @@
+#Navbar {
+  background-color: #efefef;
+  border-radius: 50px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between; /* Distribute space between elements */
+  align-items: center; /* Center items vertically */
+  padding: 0 20px; /* Add padding to the left and right */
+}
+button {
+  border: none;
+  background: none;
+  color: #131314;
+}
+
+.options {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items:normal;
+}
+
+.Monkeys {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em; /* Use relative units */
+  margin: 0 10px;
+}
+
+#Ideas {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#LOGO {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.75em; /* Use relative units */
+}
+
+#Any_Idea {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75em; /* Use relative units */
+}
+
+#Contact {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #dfff1c;
+  height: 48px;
+  width: 120px;
+  font-size: 1em; /* Use relative units */
+  border-radius: 50px;
+  transition: background-color 0.2s ease-in-out;
+  margin-left: 10px;
+}
+
+#Contact:hover {
+  background: none;
+  border: 2px #131314 solid;
+}
+
+.blurred-effect {
+  background-color: #dfff1c;
+  filter: blur(250px);
+  border-radius: 1000px;
+  padding: 20px;
+  margin: 10px;
+  position: absolute;
+  top: 4%;
+  left: 67%;
+  width: 500px;
+  height: 500px; /* Make height equal to width */
+  z-index: -2;
+}
+
+
+@media (max-width: 1080px) {
+
+  #menu-toggle {
+    color: #131314;
+    font-family: "Righteous";
+    font-weight: 400;
+    font-size: 1.5em;
+    display: block;
+
+  }
+}
+
+/* Add this to hide elements */
+.hidden {
+  display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 1080px) {
+  #menu-toggle {
+    display: block; /* Ensure the menu toggle is visible on tablet size */
+  }
+
+  .Monkeys {
+    display: none; /* Hide menu buttons by default on smaller screens */
+  }
+}
+
+/* Ensure the menu toggle button is hidden on larger screens */
+@media (min-width: 1081px) {
+  #menu-toggle {
+    display: none;
+  }
+}
+
+/* Vertical list for Monkeys elements */
+.vertical-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of the column */
+}
+
+/* Hidden class to hide elements */
+.hidden {
+  display: none;
+}
+
+/* Vertical list styling for Monkeys elements */
+.vertical-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.options.vertical-list .Monkeys {
+  display: block; /* Ensure Monkeys elements display as block */
+}
+
+/* Responsive styles */
+@media (max-width: 1080px) {
+  #menu-toggle {
+    display: block; /* Ensure the menu toggle is visible on tablet size */
+  }
+
+  .Monkeys {
+    display: none; /* Hide menu buttons by default on smaller screens */
+  }
+}
+
+/* Ensure the menu toggle button is hidden on larger screens */
+@media (min-width: 1081px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .Monkeys {
+    display: inline-block; /* Ensure Monkeys elements display normally on larger screens */
+  }
+}
+
+
